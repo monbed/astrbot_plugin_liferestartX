@@ -24,7 +24,7 @@ class LifeRestartPlugin(Star):
                     ps.append(tmp)
                 else:
                     if tmp >= 10:
-                        ps.append(random.randint(0, 30))
+                        ps.append(random.randint(0, 35))
                     else:
                         ps.append(random.randint(0, tmp))
                 tmp -= ps[-1]
