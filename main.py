@@ -4,7 +4,7 @@ from .core.Life import Life
 import random
 import os
 
-@register("liferestartX", "monbed", "人生重开模拟器", "1.1.1")
+@register("liferestartX", "monbed", "修仙重开模拟器", "1.1.1")
 class LifeRestartPlugin(Star):
     def __init__(self, context: Context):
         super().__init__(context)
@@ -35,7 +35,7 @@ class LifeRestartPlugin(Star):
                 ps.clear()
         return {'CHR': ps[0], 'INT': ps[1], 'STR': ps[2], 'MNY': ps[3]}
 
-    @filter.command("修仙重开帮助", alias=['重开帮助'])
+    @filter.command("修仙重开帮助", alias=['修仙帮助'])
     async def help(self, event: AstrMessageEvent):
         help_text = """修仙重开模拟器使用帮助
 ================================
