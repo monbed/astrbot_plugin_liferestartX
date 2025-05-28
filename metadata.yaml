@@ -2,11 +2,11 @@ name: liferestartX
 desc: 人生重开模拟器
 help: |
   【基础指令】
-  - /人生重来：开始新的人生
-  - /重开：开始新的人生（简写）
-  - /重开帮助：显示帮助信息
-  - /人生重开开：启用插件
-  - /人生重开关：禁用插件
+  - /修仙重来：开始新的人生
+  - /修仙：开始新的人生（简写）
+  - /修仙帮助：显示帮助信息
+  - /修仙重开开：启用插件
+  - /修仙重开关：禁用插件
 version: v1.1.1
 author: monbed
 repo: https://github.com/monbed/astrbot_plugin_liferestartX
