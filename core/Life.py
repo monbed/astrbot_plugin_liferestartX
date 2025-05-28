@@ -111,7 +111,7 @@ class Life:
             try:
                 eff = self._propertyhandler(self.property.total)
                 pts = [eff[k] for k in eff]
-                if sum(pts) != self.property.total or max(pts) > 30 or min(pts) < 0:
+                if sum(pts) != self.property.total or max(pts) > 35 or min(pts) < 0:
                     return False
                     # raise HandlerException(f'property allocation points incorrect')
                 self.property.apply(eff)
