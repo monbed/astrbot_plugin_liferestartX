@@ -35,15 +35,15 @@ class LifeRestartPlugin(Star):
                 ps.clear()
         return {'CHR': ps[0], 'INT': ps[1], 'STR': ps[2], 'MNY': ps[3]}
 
-    @filter.command("人生重开帮助", alias=['重开帮助'])
+    @filter.command("修仙重开帮助", alias=['重开帮助'])
     async def help(self, event: AstrMessageEvent):
-        help_text = """人生重开模拟器使用帮助
+        help_text = """修仙重开模拟器使用帮助
 ================================
 
 【基础指令】
 --------------------------------
-• /人生重来：开始新的人生
-• /重开：开始新的人生（简写）
+• /修仙重来：开始新的人生
+• /修仙：开始新的人生（简写）
 
 【注意事项】
 --------------------------------
@@ -57,7 +57,7 @@ class LifeRestartPlugin(Star):
         url = await self.text_to_image(help_text)
         yield event.image_result(url)
 
-    @filter.command("重开", alias=['人生重来'])
+    @filter.command("修仙", alias=['修仙重来'])
     async def remake(self, event: AstrMessageEvent):
         try:
             # 初始化 life
@@ -108,10 +108,10 @@ class LifeRestartPlugin(Star):
         except Exception as e:
             yield event.plain_result(f"发生错误：{e}")
 
-    @filter.command(["人生重开开", "人生重开关"])
+    @filter.command(["修仙重开开", "修仙重开关"])
     async def handle_plugin_switch(self, event: AstrMessageEvent):
         message = event.message_str.strip()
         group_id = str(event.message_obj.group_id)
-        enabled = message == "人生重开开"
+        enabled = message == "修仙重开开"
         await self.set_group_enabled(group_id, enabled)
-        yield event.plain_result(f"已{'启用' if enabled else '禁用'}人生重开模拟器")
+        yield event.plain_result(f"已{'启用' if enabled else '禁用'}修仙重开模拟器")
