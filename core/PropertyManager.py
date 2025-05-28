@@ -93,7 +93,7 @@ class PropertyManager:
         self.AGE = -1
         self.LIF = 1 # hp
         
-        self.total = 200
+        self.total = 100
 
         self.TMS = 1
         self.AVT = []
