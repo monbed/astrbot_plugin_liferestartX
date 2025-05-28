@@ -29,9 +29,9 @@
 
 ## 更新日志
 
-### v1.0.0
+### v1.1.1
 
-- 发布初始版本
+- 改为修仙版
 
 ## TODO
 
@@ -39,6 +39,6 @@
 - 添加统计功能
 
 ## 致谢
-
+- 修改自：https://github.com/kterna/astrbot_plugin_liferestart
 - 原项目：[lifeRestart](https://github.com/VickScarlet/lifeRestart)
 - 原Bot适配：[DaiShengSheng](https://github.com/DaiShengSheng/lifeRestart_bot)
